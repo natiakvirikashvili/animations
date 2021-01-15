@@ -1,0 +1,57 @@
+  
+.image-box {
+  position: relative;
+}
+
+
+.box1 {
+  background-size: cover;
+  background-position: top right; 
+  background-image: url("field.jpg");
+  background-repeat: no-repeat; 
+  background-size: contain;
+}
+
+
+.box2 {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  animation: mymove infinite;
+  animation-duration: 10s;
+  background-size: contain;
+  background-position: bottom right;
+  animation-direction:normal;
+}
+
+
+.box3 {
+  width: 50px;
+  height: 40px;
+  position: absolute; 
+  top: 70%;
+  right: 40%;
+  animation: move infinite;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+}
+
+
+ 
+/* keyframes  */
+
+
+@keyframes mymove {
+  from {left: 1%;}
+  to {left: 90%;}
+}
+
+
+@keyframes move {
+  0%   {bottom: 0px; width: 25px;}
+  25%  {top: 50px; width: 45px;}
+  75%  {top: 50px; width: 70px;}
+  100% {right: 55px; width: 60px;} 
+} 
